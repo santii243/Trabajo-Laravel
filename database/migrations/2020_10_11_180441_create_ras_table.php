@@ -17,7 +17,7 @@ class CreateRasTable extends Migration
             $table->engine="InnoDB";
             $table->increments('id');
             $table->integer('number');
-            $table->text('description');
+            $table->string('description');
             $table->unsignedInteger('module_id');
             $table->foreign('module_id')->references('id')->on('modules');
             $table->boolean('deleted');

@@ -19,7 +19,7 @@ class CreateAssistancesTable extends Migration
             $table->unsignedInteger('student_id');
             $table->foreign('student_id')->references('id')->on('students');
             $table->date('date');
-            $table->string('assistance');
+            $table->string('assistances');
             $table->boolean('deleted');
             $table->timestamps();
         });
